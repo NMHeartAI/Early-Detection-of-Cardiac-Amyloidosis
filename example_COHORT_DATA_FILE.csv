@@ -1,0 +1,1 @@
+id,true_label,Age,Sex,Race,SDI,EF,PWT,IVS_d_2D_calc,RWT,htn,LVIDD,mayo_score,ultromics_classification,ultromics_cls_list,ultromics_prob_list,ultromics_uncertainty_list,ultromics_prediction,echonet_prediction,pfizer_prediction,pfizer_prediction_proba,encounter_gt_50,
