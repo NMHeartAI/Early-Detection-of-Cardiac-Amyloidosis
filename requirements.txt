@@ -1,0 +1,17 @@
+numpy
+pandas
+fastparquet
+pyarrow
+matplotlib
+seaborn
+jupyterlab
+tqdm
+black
+nltk
+unidecode
+spacy
+srsly
+jupyterlab-prodigy
+openpyxl
+plotly
+scikit-learn
