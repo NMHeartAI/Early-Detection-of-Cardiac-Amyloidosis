@@ -1,0 +1,72 @@
+﻿"Variable / Field Name","Form Name","Section Header","Field Type","Field Label","Choices, Calculations, OR Slider Labels","Field Note","Text Validation Type OR Show Slider Number","Text Validation Min","Text Validation Max",Identifier?,"Branching Logic (Show field only if...)","Required Field?","Custom Alignment","Question Number (surveys only)","Matrix Group Name","Matrix Ranking?","Field Annotation"
+record_id,questionnaire,,text,"Record ID",,,,,,,,,,,,,
+consent_instructions,questionnaire,"<div class=""rich-text-field-label""><h2>Permission to Take Part in a Human Research Study</h2></div>",descriptive,"Please review the consent form below:",,,,,,,,,,,,,
+consent,questionnaire,,descriptive,,,,,,,,,,,,,,
+agreement,questionnaire,,radio,"Do you agree to participate in this study?","1, I Agree | 0, I Disagree",,,,,,,y,,,,,
+card_type,questionnaire,"<div class=""rich-text-field-label""><h2>Participant Information</h2></div>",radio,"What type of cardiologist are you?","1, General cardiologist | 2, Cardiac imaging specialist | 3, Heart failure specialist | 4, Other",,,,,,,y,,,,,
+card_type_oth,questionnaire,,text,"Please specify what type of cardiologist you are",,,,,,,"[card_type] = '4'",y,,,,,
+experience,questionnaire,,text,"How many years have you been practicing medicine since the completion of terminal clinical training? ",,,number,0,,,,y,,,,,
+read_echo,questionnaire,,yesno,"Are you board-certified to read echocardiograms?",,,,,,,,y,,,,,
+instructions_pt2,questionnaire,"<div class=""rich-text-field-label""><h2>Part 2: Simulated Use</h2></div>",descriptive,"<div class=""rich-text-field-label""><p>The simulated-use task will involve the users interacting with the device report and answering specific questions. Please review each report and indicate how you interpret the classification.</p></div>",,,,,,,,,,,,,
+pt2_rp1_img,questionnaire,,descriptive,"<div class=""rich-text-field-label""><h4>Report 1</h4></div>",,,,,,,,,,,,,
+pt2_rp1,questionnaire,,radio,"What interpretation would you make for Report 1?
+
+","1, Is suggestive of cardiac amyloidosis | 2, Is NOT suggestive of cardiac amyloidosis | 3, AI uncertainty threshold not met, no prediction provided | 4, Software error report",,,,,,,y,,,,,
+pt2_rp2_img,questionnaire,,descriptive,"<div class=""rich-text-field-label""><h4>Report 2</h4></div>",,,,,,,,,,,,,
+pt2_rep2,questionnaire,,radio,"What interpretation would you make for Report 2?
+
+","1, Is suggestive of cardiac amyloidosis | 2, Is NOT suggestive of cardiac amyloidosis | 3, AI uncertainty threshold not met, no prediction provided | 4, Software error report",,,,,,,y,,,,,
+pt2_rp3_img,questionnaire,,descriptive,"<div class=""rich-text-field-label""><h4>Report 3</h4></div>",,,,,,,,,,,,,
+pt2_rp3,questionnaire,,radio,"What interpretation would you make for Report 3?
+
+","1, Is suggestive of cardiac amyloidosis | 2, Is NOT suggestive of cardiac amyloidosis | 3, AI uncertainty threshold not met, no prediction provided | 4, Software error report",,,,,,,y,,,,,
+pt2_rp4_img,questionnaire,,descriptive,"<div class=""rich-text-field-label""><h4>Report 4</h4></div>",,,,,,,,,,,,,
+pt2_rp4,questionnaire,,radio,"What interpretation would you make for Report 4?
+
+","1, Is suggestive of cardiac amyloidosis | 2, Is NOT suggestive of cardiac amyloidosis | 3, AI uncertainty threshold not met, no prediction provided | 4, Software error report",,,,,,,y,,,,,
+pt2_rp5_img,questionnaire,,descriptive,"<div class=""rich-text-field-label""><h4>Report 5</h4></div>",,,,,,,,,,,,,
+pt2_rp5,questionnaire,,radio,"What interpretation would you make for Report 5?
+
+","1, Is suggestive of cardiac amyloidosis | 2, Is NOT suggestive of cardiac amyloidosis | 3, AI uncertainty threshold not met, no prediction provided | 4, Software error report",,,,,,,y,,,,,
+pt2_rp6,questionnaire,,descriptive,"<div class=""rich-text-field-label""><h4>Report 6</h4></div>",,,,,,,,,,,,,
+pt2_rep6,questionnaire,,radio,"What interpretation would you make for Report 6?
+
+","1, Is suggestive of cardiac amyloidosis | 2, Is NOT suggestive of cardiac amyloidosis | 3, AI uncertainty threshold not met, no prediction provided | 4, Software error report",,,,,,,y,,,,,
+int_purpose,questionnaire,"Please indicate how clear or easy to interpret the following aspects of the report are",radio,"The purpose of this device","1, Extremely unclear/hard to interpret | 2, Somewhat unclear/hard to interpret | 3, Neither clear nor unclear/Neither hard to interpret nor easy to interpret | 4, Somewhat clear/easy to interpret | 5, Extremely clear/easy to interpret",,,,,,,y,,,interpret,,
+int_indication,questionnaire,,radio,"The indications for use of this device","1, Extremely unclear/hard to interpret | 2, Somewhat unclear/hard to interpret | 3, Neither clear nor unclear/Neither hard to interpret nor easy to interpret | 4, Somewhat clear/easy to interpret | 5, Extremely clear/easy to interpret",,,,,,,y,,,interpret,,
+int_frame,questionnaire,,radio,"Sampled image frame field","1, Extremely unclear/hard to interpret | 2, Somewhat unclear/hard to interpret | 3, Neither clear nor unclear/Neither hard to interpret nor easy to interpret | 4, Somewhat clear/easy to interpret | 5, Extremely clear/easy to interpret",,,,,,,y,,,interpret,,
+int_class,questionnaire,,radio,"AI classification (i.e., whether the input data is suggestive or not suggestive of CA)","1, Extremely unclear/hard to interpret | 2, Somewhat unclear/hard to interpret | 3, Neither clear nor unclear/Neither hard to interpret nor easy to interpret | 4, Somewhat clear/easy to interpret | 5, Extremely clear/easy to interpret",,,,,,,y,,,interpret,,
+int_prob,questionnaire,,radio,"Class probability score","1, Extremely unclear/hard to interpret | 2, Somewhat unclear/hard to interpret | 3, Neither clear nor unclear/Neither hard to interpret nor easy to interpret | 4, Somewhat clear/easy to interpret | 5, Extremely clear/easy to interpret",,,,,,,y,,,interpret,,
+ing_ca,questionnaire,,radio,"Comparative analysis histogram","1, Extremely unclear/hard to interpret | 2, Somewhat unclear/hard to interpret | 3, Neither clear nor unclear/Neither hard to interpret nor easy to interpret | 4, Somewhat clear/easy to interpret | 5, Extremely clear/easy to interpret",,,,,,,y,,,interpret,,
+use_frame,questionnaire,"Please indicate how useful the following aspects of the report are ",radio,"Sampled image frame field","1, Not useful at all | 2, Slightly useful | 3, Moderately useful | 4, Very useful | 5, Extremely useful",,,,,,,y,,,usefulness,,
+use_class,questionnaire,,radio,"AI classification (i.e., whether the input data is suggestive or not suggestive of CA)","1, Not useful at all | 2, Slightly useful | 3, Moderately useful | 4, Very useful | 5, Extremely useful",,,,,,,y,,,usefulness,,
+use_prob,questionnaire,,radio,"Class probability score","1, Not useful at all | 2, Slightly useful | 3, Moderately useful | 4, Very useful | 5, Extremely useful",,,,,,,y,,,usefulness,,
+use_ca,questionnaire,,radio,"Comparative analysis histogram","1, Not useful at all | 2, Slightly useful | 3, Moderately useful | 4, Very useful | 5, Extremely useful",,,,,,,y,,,usefulness,,
+dif_class,questionnaire,"Please indicate how likely the following aspects of the report are to cause difficulties for the user",radio,"AI classification (i.e., whether the input data is suggestive or not suggestive of CA)","1, Extremely unlikely to cause difficulties for the user | 2, Somewhat unlikely to cause difficulties for the user | 3, Neither likely nor unlikely to cause difficulties for the user | 4, Somewhat likely to cause difficulties for the user | 5, Extremely likely to cause difficulties for the user",,,,,,,y,,,difficulties,,
+dif_prob,questionnaire,,radio,"Class probability score","1, Extremely unlikely to cause difficulties for the user | 2, Somewhat unlikely to cause difficulties for the user | 3, Neither likely nor unlikely to cause difficulties for the user | 4, Somewhat likely to cause difficulties for the user | 5, Extremely likely to cause difficulties for the user",,,,,,,y,,,difficulties,,
+dif_ca,questionnaire,,radio,"Comparative analysis histogram","1, Extremely unlikely to cause difficulties for the user | 2, Somewhat unlikely to cause difficulties for the user | 3, Neither likely nor unlikely to cause difficulties for the user | 4, Somewhat likely to cause difficulties for the user | 5, Extremely likely to cause difficulties for the user",,,,,,,y,,,difficulties,,
+use_dif_specify,questionnaire,,notes,"Please describe what difficulties, if any, you think the report design will cause for the user. ",,,,,,,"[dif_ca] = '5' or [dif_ca] = '4' or [dif_prob] = '4' or [dif_prob] = '5' or [dif_class] = '5' or [dif_class] = '4'",,RH,,,,
+pt4_q1,questionnaire,"<div class=""rich-text-field-label""><h2>Part 4: Opinions on AI Confidence and AI Transparency Display Options</h2></div>",radio,"AI confidence refers to the calculated probability that an AI model's output is correct. Looking at the AI confidence display options below (figures 1-4), please indicate which figure you prefer for displaying AI confidence?","1, Figure 1 | 2, Figure 2 | 3, Figure 3 | 4, Figure 4 | 5, None - it is not helpful to show AI confidence on the report",,,,,,,y,,,,,
+pt4_fig1,questionnaire,,descriptive,"<div class=""rich-text-field-label""><h4><span style=""font-weight: normal;"">Figure 1</span></h4></div>",,,,,,,,,,,,,
+pt4_fig2,questionnaire,,descriptive,"<div class=""rich-text-field-label""><h4>Figure 2</h4></div>",,,,,,,,,,,,,
+pt4_fig3,questionnaire,,descriptive,"<div class=""rich-text-field-label""><h4>Figure 3</h4></div>",,,,,,,,,,,,,
+pt4_fig4,questionnaire,,descriptive,"<div class=""rich-text-field-label""><h4>Figure 4</h4> <p>(Y axis is class probability) Dot represents class probability of the input data, the horizontal line represents the decision threshold and the dashed lines represent the uncertainty window around the decision threshold. </p></div>",,,,,,,,,,,,,
+pt4_gc,questionnaire,,descriptive,"<div class=""rich-text-field-label""><h4>GradCam</h4> <p>AI transparency refers to understanding how artificial intelligence systems make decisions, why they produce specific results, and what data they use. The figure below shows a GradCam. The GradCam highlights areas of the input image, that the AI is more focused on.</p></div>",,,,,,,,,,,,,
+pt4_gc_use,questionnaire,,radio,"If a GradCam was displayed on the report, would you use it in your interpretation of the device output?","1, Yes | 0, No | 2, Unsure",,,,,,,y,,,,,
+pt4_gc_use_yes,questionnaire,,notes,"Please explain how you would use it in your interpretation of the device output",,,,,,,"[pt4_gc_use] = '1'",,,,,,
+pt4_gc_use_no,questionnaire,,notes,"Please explain why you would not use GradCam in your interpretation of the device output",,,,,,,"[pt4_gc_use] = '0'",,,,,,
+pt4_gc_display,questionnaire,,yesno,"Do you think GradCam should be displayed on the report?",,,,,,,,y,,,,,
+pt4_oth_measures,questionnaire,,yesno,"Are there any other AI confidence or AI transparency measures or any other information you'd like to see on the report?",,,,,,,,y,,,,,
+pt4_oth_measures_specify,questionnaire,,notes,"Please explain what else you'd like to see on the report and why",,,,,,,"[pt4_oth_measures] = '1'",,,,,,
+aim_1,questionnaire,"Acceptability of Intervention Measure (AIM)",radio,"AI-powered tools that flag patients with a high probability of having or developing CA meet my approval.","1, Completely disagree | 2, Disagree | 3, Neither agree nor disagree | 4, Agree | 5, Completely agree",,,,,,,y,,,aim,,
+aim_2,questionnaire,,radio,"AI-powered tools that flag patients with a high probability of having or developing CA are appealing to me.","1, Completely disagree | 2, Disagree | 3, Neither agree nor disagree | 4, Agree | 5, Completely agree",,,,,,,y,,,aim,,
+aim_3,questionnaire,,radio,"I like AI-powered tools that flag patients with a high probability of having or developing CA.","1, Completely disagree | 2, Disagree | 3, Neither agree nor disagree | 4, Agree | 5, Completely agree",,,,,,,y,,,aim,,
+aim_4,questionnaire,,radio,"I welcome AI-powered tools that flag patients with a high probability of having or developing CA.","1, Completely disagree | 2, Disagree | 3, Neither agree nor disagree | 4, Agree | 5, Completely agree",,,,,,,y,,,aim,,
+fim_1,questionnaire,"Feasibility of Intervention Measure (FIM)",radio,"AI-powered tools that flag patients with a high probability of having or developing CA seem implementable.","1, Completely disagree | 2, Disagree | 3, Neither agree nor disagree | 4, Agree | 5, Completely agree",,,,,,,y,,,fim,,
+fim_2,questionnaire,,radio,"AI-powered tools that flag patients with a high probability of having or developing CA seem possible.","1, Completely disagree | 2, Disagree | 3, Neither agree nor disagree | 4, Agree | 5, Completely agree",,,,,,,y,,,fim,,
+fim_3,questionnaire,,radio,"AI-powered tools that flag patients with a high probability of having or developing CA seem doable.","1, Completely disagree | 2, Disagree | 3, Neither agree nor disagree | 4, Agree | 5, Completely agree",,,,,,,y,,,fim,,
+fim_4,questionnaire,,radio,"AI-powered tools that flag patients with a high probability of having or developing CA seem easy to use.","1, Completely disagree | 2, Disagree | 3, Neither agree nor disagree | 4, Agree | 5, Completely agree",,,,,,,y,,,fim,,
+pay_instructions,questionnaire,"<div class=""rich-text-field-label""><h2>Details for Participant Payment</h2></div>",descriptive,"The fields below are necessary for processing your participant payment. Please complete these fields if you would like to receive a $100 stored value (VISA) card for your participation. You will receive the virtual stored value card via the email address you enter below. Alternatively, you may contact lacey.gleason@northwestern.edu to share this information.",,,,,,,,,,,,,
+pay_name,questionnaire,,text,Name,,,,,,y,,,,,,,
+pay_email,questionnaire,,text,"Email address",,,email,,,y,,,,,,,
+pay_address,questionnaire,,text,"<div class=""rich-text-field-label""><p>Mailing Address*</p> <p><span style=""font-weight: normal;""><em>*Necessary for processing payment, but you will not receive anything via mail.</em></span></p></div>",,,,,,y,,,,,,,
