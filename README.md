@@ -21,8 +21,11 @@ The specific aims are to:
 - Aim 1: Define cardiac mechanical abnormalities preceding diagnosis and disease progression of CA using traditional echo measures and with AI.
     - H1a: Subtle changes in cardiac structure and mechanics will be seen on echo at least 2 years before the diagnosis of CA.
     - H1b: AI can identify early manifestations of CA in patients with subclinical evidence of CA on echo.
+
 - Aim 2: Test an AI-application that integrates diagnosis codes and text using deep learning-based natural language processing to identify CA patients.
     - H2: An integrated pipeline will have better performance than models using ICD codes alone.
-- Aim 3: Evaluate the feasibility and acceptability of an AI-powered clinical decision tool that flags patients with a high probability of having or developing CA.
-    - H3: Iterative prototype designs, created through user-centered design methods, will result in improved clinical acceptance
+
+- Aim 3: Evaluate the usability, feasibility, acceptability of an AI-powered clinical decision tool that flags patients with a high probability of having or developing CA.
+    - H3: Gathering feedback on the design of AI-powered clinical decision tools will help improve clinical acceptance.
+
 
